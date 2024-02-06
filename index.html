@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Website</title>
+    <link rel="stylesheet" href="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\Voting CSS.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\273591404_1110315986204367_7487733521965423996_n.png" alt=""></a>
+        <h1>DON MARIANO MARCOS NATIONAL HIGH SCHOOL</h1>
+        <h1>Voting Website</h1>
+        
+    </header>
+    <fieldset>
+        <legend>ONLINE ELECTION SYSTEM</legend>
+    <div class="container">
+        <div class="candidate" id="candidate1">
+            <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\template_3.jpg" alt="Candidate 1">
+            <h3>FOR PRESIDENT</h3>
+            <button onclick="vote('candidate1')">Vote</button>
+        </div>
+        <div class="candidate" id="candidate2">
+            <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\98511ee98a1930b8938e42caf0904d2d.jpg" alt="Candidate 2">
+            <h3>FOR VICE-PRESIDENT</h3>
+            <button onclick="vote('candidate2')">Vote</button>
+        </div>
+        <div class="candidate" id="candidate3">
+            <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\pexels-tony-jamesandersson-1674752.jpg" alt="Candidate 3">
+            <h3>FOR SECRETARY</h3>
+            <button onclick="vote('candidate3')">Vote</button>
+        </div>
+        <div class="candidate" id="candidate4">
+            <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\1-intro-photo-final.jpg" alt="Candidate 4">
+            <h3>FOR TREASURER</h3>
+            <button onclick="vote('candidate4')">Vote</button>
+        </div>
+        <div class="candidate" id="candidate5">
+            <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\1-intro-photo-final.jpg" alt="Candidate 4">
+            <h3>FOR P.I.O</h3>
+            <button onclick="vote('candidate5')">Vote</button>
+        </div>
+        <div class="candidate" id="candidate6">
+            <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\1-intro-photo-final.jpg" alt="Candidate 4">
+            <h3>FOR PEACE OFFICER</h3>
+            <button onclick="vote('candidate6')">Vote</button>
+        </div>
+    </div>
+    </fieldset>
+    <fieldset class="REPRESENTATIVES">
+        <legend>REPRESENTATIVES</legend>
+        <div class="representative">
+            <div class="party" id="party1">
+                <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\template_3.jpg" alt="Party 1">
+                <h3>GRADE 7</h3>
+                <button onclick="vote('party1')">Vote</button>
+            </div>
+            <div class="party" id="party2">
+                <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\98511ee98a1930b8938e42caf0904d2d.jpg" alt="Party 2">
+                <h3>GRADE 8</h3>
+                <button onclick="vote('party2')">Vote</button>
+            </div>
+            <div class="party" id="party3">
+                <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\pexels-tony-jamesandersson-1674752.jpg" alt="Party 3">
+                <h3>GRADE 9</h3>
+                <button onclick="vote('party3')">Vote</button>
+            </div>
+            <div class="party" id="party4">
+                <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\1-intro-photo-final.jpg" alt="Party 4">
+                <h3>GRADE 10</h3>
+                <button onclick="vote('party4')">Vote</button>
+            </div>
+            <div class="party" id="party5">
+                <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\1-intro-photo-final.jpg" alt="Party 5">
+                <h3>GRADE 11</h3>
+                <button onclick="vote('party5')">Vote</button>
+            </div>
+            <div class="party" id="party6">
+                <img src="C:\Users\Ivan Glenn Tolentino\Desktop\Voting Website\1-intro-photo-final.jpg" alt="Party 6">
+                <h3>GRADE 12</h3>
+                <button onclick="vote('party6')">Vote</button>
+            </div>
+        </div>
+    </fieldset>
+    <script>
+        let votes = {
+            candidate1: 0,
+            candidate2: 0,
+            candidate3: 0,
+            candidate4: 0,
+            candidate5: 0,
+            candidate6: 0,
+            party1: 0,
+            party2: 0,
+            party3: 0,
+            party4: 0,
+            party5: 0,
+            party6: 0
+        };
+
+        function vote(candidate) {
+            votes[candidate]++;
+            updateVotes();
+        }
+
+        function updateVotes() {
+            document.getElementById('candidate1').children[2].innerText = votes.candidate1;
+            document.getElementById('candidate2').children[2].innerText = votes.candidate2;
+            document.getElementById('candidate3').children[2].innerText = votes.candidate3;
+            document.getElementById('candidate4').children[2].innerText = votes.candidate4;
+            document.getElementById('candidate5').children[2].innerText = votes.candidate5;
+            document.getElementById('candidate6').children[2].innerText = votes.candidate6;
+            document.getElementById('party1').children[2].innerText = votes.party1;
+            document.getElementById('party2').children[2].innerText = votes.party2;
+            document.getElementById('party3').children[2].innerText = votes.party3;
+            document.getElementById('party4').children[2].innerText = votes.party4;
+            document.getElementById('party5').children[2].innerText = votes.party5;
+            document.getElementById('party6').children[2].innerText = votes.party6;
+        }
+    </script>
+</body>
+</html>

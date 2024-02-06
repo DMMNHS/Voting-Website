@@ -1,0 +1,107 @@
+        .logo img {
+            width: 100px;
+            align-content: left;
+            padding-left: 10px;
+        }
+        header{
+            padding: 1px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: cornflowerblue;
+        }
+        header h1{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        legend{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            padding-right: 10px;
+            font-size: large;
+            text-align: center;
+            background-color: antiquewhite;
+            color: black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('C:/Users/Ivan Glenn Tolentino/Desktop/Voting Website/Untitled design (9).png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .candidate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .candidate img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .candidate h3 {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: antiquewhite;
+            border-radius: 20%;
+        }
+        .candidate button {
+            background-color:antiquewhite;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .candidate button:hover {
+            background-color: #226fc1;
+        }
+        .representative {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .REPRESENTATIVES legend {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            padding-right: 10px;
+            font-size: large;
+            text-align: center;
+            background-color: antiquewhite;
+            color: black;
+        }
+        .party {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .party img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .party h3 {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: antiquewhite;
+            border-radius: 20%;
+        }
+        .party button {
+            background-color:antiquewhite;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .party button:hover {
+            background-color: #226fc1;
+        }
